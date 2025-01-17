@@ -1,16 +1,12 @@
 import { by, device, element, expect } from 'detox';
 
-describe('Test suite 1', () => {
+describe('Demo Overflow', () => {
   beforeAll(async () => {
     await device.relaunchApp();
   });
 
-  it('should have welcome screen', async () => {
-    await expect(element(by.id('welcome'))).toBeVisible();
-  });
-
-  it('should show hello screen after tap', async () => {
-    await element(by.id('hello_button')).tap();
-    await expect(element(by.text('Hello!!!'))).toBeVisible();
+  it('find overflow view', async () => {
+    await waitFor(element(by.id('test_ID'))).toBeVisible().withTimeout(500);
+    await expect(element(by.id('test_ID'))).toBeVisible();
   });
 });
