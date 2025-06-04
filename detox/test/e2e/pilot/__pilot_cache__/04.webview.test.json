@@ -1,0 +1,101 @@
+{
+  "{\"currentStep\":\"Restart the React Native state\",\"previousSteps\":[]}": [
+    {
+      "value": {
+        "code": "await device.reloadReactNative();"
+      },
+      "validationMatcher": "// No UI elements need validation for device-level React Native restart operation",
+      "creationTime": 1748233902804
+    }
+  ],
+  "{\"currentStep\":\"Navigate to the WebView screen\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('detox_temp_0_0_0_1_0_27')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_27'))).toExist();",
+      "creationTime": 1748233910303
+    }
+  ],
+  "{\"currentStep\":\"Find an element with ID \\\"pageHeadline\\\" in the WebView\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WebView screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_27')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(web.element(by.web.id('pageHeadline'))).toExist();"
+      },
+      "validationMatcher": "await expect(element(by.id('webViewFormWithScrolling'))).toBeVisible();",
+      "creationTime": 1748233920139
+    }
+  ],
+  "{\"currentStep\":\"Verify that the text of this element is \\\"First Webview\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WebView screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_27')).tap();\"},{\"step\":\"Find an element with ID \\\"pageHeadline\\\" in the WebView\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toExist();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(web.element(by.web.id('pageHeadline'))).toHaveText('First Webview');"
+      },
+      "validationMatcher": "await expect(web.element(by.web.id('pageHeadline'))).toExist();",
+      "creationTime": 1748233927939
+    }
+  ],
+  "{\"currentStep\":\"Locate an input field with ID \\\"fname\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WebView screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_27')).tap();\"},{\"step\":\"Find an element with ID \\\"pageHeadline\\\" in the WebView\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toExist();\"},{\"step\":\"Verify that the text of this element is \\\"First Webview\\\"\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toHaveText('First Webview');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(web.element(by.web.id('fname'))).toExist();"
+      },
+      "validationMatcher": "await expect(web.element(by.web.id('fname'))).toExist();",
+      "creationTime": 1748233934027
+    }
+  ],
+  "{\"currentStep\":\"Type \\\"Tester\\\" into this input field\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WebView screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_27')).tap();\"},{\"step\":\"Find an element with ID \\\"pageHeadline\\\" in the WebView\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toExist();\"},{\"step\":\"Verify that the text of this element is \\\"First Webview\\\"\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toHaveText('First Webview');\"},{\"step\":\"Locate an input field with ID \\\"fname\\\"\",\"code\":\"await expect(web.element(by.web.id('fname'))).toExist();\"}]}": [
+    {
+      "value": {
+        "code": "await web.element(by.web.id('fname')).typeText('Tester');"
+      },
+      "validationMatcher": "await expect(web.element(by.web.id('fname'))).toExist();",
+      "creationTime": 1748233941686
+    }
+  ],
+  "{\"currentStep\":\"Confirm that the input field now contains the text \\\"Tester\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WebView screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_27')).tap();\"},{\"step\":\"Find an element with ID \\\"pageHeadline\\\" in the WebView\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toExist();\"},{\"step\":\"Verify that the text of this element is \\\"First Webview\\\"\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toHaveText('First Webview');\"},{\"step\":\"Locate an input field with ID \\\"fname\\\"\",\"code\":\"await expect(web.element(by.web.id('fname'))).toExist();\"},{\"step\":\"Type \\\"Tester\\\" into this input field\",\"code\":\"await web.element(by.web.id('fname')).typeText('Tester');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(web.element(by.web.id('fname'))).toHaveText('Tester');"
+      },
+      "validationMatcher": "await expect(web.element(by.web.id('fname'))).toExist();",
+      "creationTime": 1748233952555
+    }
+  ],
+  "{\"currentStep\":\"Find and click a submit button\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WebView screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_27')).tap();\"},{\"step\":\"Find an element with ID \\\"pageHeadline\\\" in the WebView\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toExist();\"},{\"step\":\"Verify that the text of this element is \\\"First Webview\\\"\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toHaveText('First Webview');\"},{\"step\":\"Locate an input field with ID \\\"fname\\\"\",\"code\":\"await expect(web.element(by.web.id('fname'))).toExist();\"},{\"step\":\"Type \\\"Tester\\\" into this input field\",\"code\":\"await web.element(by.web.id('fname')).typeText('Tester');\"},{\"step\":\"Confirm that the input field now contains the text \\\"Tester\\\"\",\"code\":\"await expect(web.element(by.web.id('fname'))).toHaveText('Tester');\"}]}": [
+    {
+      "value": {
+        "code": "await web.element(by.web.id('submit')).tap();"
+      },
+      "validationMatcher": "await expect(web.element(by.web.id('submit'))).toExist();",
+      "creationTime": 1748233960331
+    }
+  ],
+  "{\"currentStep\":\"Check that the input field still contains \\\"Tester\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WebView screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_27')).tap();\"},{\"step\":\"Find an element with ID \\\"pageHeadline\\\" in the WebView\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toExist();\"},{\"step\":\"Verify that the text of this element is \\\"First Webview\\\"\",\"code\":\"await expect(web.element(by.web.id('pageHeadline'))).toHaveText('First Webview');\"},{\"step\":\"Locate an input field with ID \\\"fname\\\"\",\"code\":\"await expect(web.element(by.web.id('fname'))).toExist();\"},{\"step\":\"Type \\\"Tester\\\" into this input field\",\"code\":\"await web.element(by.web.id('fname')).typeText('Tester');\"},{\"step\":\"Confirm that the input field now contains the text \\\"Tester\\\"\",\"code\":\"await expect(web.element(by.web.id('fname'))).toHaveText('Tester');\"},{\"step\":\"Find and click a submit button\",\"code\":\"await web.element(by.web.id('submit')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(web.element(by.web.id('fname'))).toHaveText('Tester');"
+      },
+      "validationMatcher": "await expect(element(by.id('webViewFormWithScrolling'))).toExist();\nawait expect(web.element(by.web.id('fname'))).toExist();",
+      "creationTime": 1748233970422
+    }
+  ],
+  "{\"currentStep\":\"Scroll to \\\"bottomParagraph\\\" in the WebView\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WebView screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_27')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await web.element(by.web.id('bottomParagraph')).scrollToView();"
+      },
+      "validationMatcher": "await expect(element(by.id('webViewFormWithScrolling'))).toExist();",
+      "creationTime": 1748233981084
+    }
+  ],
+  "{\"currentStep\":\"Verify that the text of this element is \\\"This is a bottom paragraph with class.\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WebView screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_27')).tap();\"},{\"step\":\"Scroll to \\\"bottomParagraph\\\" in the WebView\",\"code\":\"await web.element(by.web.id('bottomParagraph')).scrollToView();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(web.element(by.web.id('bottomParagraph'))).toHaveText('This is a bottom paragraph with class.');"
+      },
+      "validationMatcher": "await expect(element(by.id('webViewFormWithScrolling'))).toBeVisible();\nawait expect(web.element(by.web.id('bottomParagraph'))).toExist();",
+      "creationTime": 1748233992971
+    }
+  ]
+}

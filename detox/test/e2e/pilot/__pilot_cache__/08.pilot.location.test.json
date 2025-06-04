@@ -1,0 +1,65 @@
+{
+  "{\"currentStep\":\"Restart the React Native state\",\"previousSteps\":[]}": [
+    {
+      "value": {
+        "code": "await device.reloadReactNative();"
+      },
+      "validationMatcher": "// No UI elements need validation for this device-level operation",
+      "creationTime": 1748233484771
+    }
+  ],
+  "{\"currentStep\":\"Launch the app with location permission denied\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"}]}": [
+    {
+      "value": {
+        "code": "await device.launchApp({ \n  newInstance: true, \n  permissions: { location: 'never' } \n});"
+      },
+      "validationMatcher": "// No cache validation needed as this is a device launch operation that doesn't interact with specific UI elements",
+      "creationTime": 1748233491833
+    }
+  ],
+  "{\"currentStep\":\"Navigate to the Location screen\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Launch the app with location permission denied\",\"code\":\"await device.launchApp({ \\n  newInstance: true, \\n  permissions: { location: 'never' } \\n});\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('detox_temp_0_0_0_1_0_24')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_24'))).toExist();",
+      "creationTime": 1748233502961
+    }
+  ],
+  "{\"currentStep\":\"Verify there is an element with the text \\\"Get location\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Launch the app with location permission denied\",\"code\":\"await device.launchApp({ \\n  newInstance: true, \\n  permissions: { location: 'never' } \\n});\"},{\"step\":\"Navigate to the Location screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_24')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('get_location_button'))).toHaveText('Get location');"
+      },
+      "validationMatcher": "await expect(element(by.id('get_location_button'))).toExist();",
+      "creationTime": 1748233513782
+    }
+  ],
+  "{\"currentStep\":\"Verify there is an element with the text \\\"Get location\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Launch the app with location permission denied\",\"code\":\"await device.launchApp({ \\n  newInstance: true, \\n  permissions: { location: 'never' } \\n});\"},{\"step\":\"Navigate to the Location screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_24')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Get location\\\"\",\"code\":\"await expect(element(by.id('get_location_button'))).toHaveText('Get location');\",\"error\":\"Test Failed: Failed expectation: TOHAVETEXT(text == “Get location”) WITH MATCHER(id == “get_location_button”)\\n\\nHINT: To print view hierarchy on failed actions/matches, use log-level verbose or higher.\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('get_location_button'))).toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.id('get_location_button'))).toExist();",
+      "creationTime": 1748233523242
+    }
+  ],
+  "{\"currentStep\":\"Tap the get location element\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Launch the app with location permission denied\",\"code\":\"await device.launchApp({ \\n  newInstance: true, \\n  permissions: { location: 'never' } \\n});\"},{\"step\":\"Navigate to the Location screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_24')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Get location\\\"\",\"code\":\"await expect(element(by.id('get_location_button'))).toBeVisible();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('get_location_button')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('get_location_button'))).toExist();",
+      "creationTime": 1748233529592
+    }
+  ],
+  "{\"currentStep\":\"Verify there is an element with the text \\\"User denied access to location services.\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Launch the app with location permission denied\",\"code\":\"await device.launchApp({ \\n  newInstance: true, \\n  permissions: { location: 'never' } \\n});\"},{\"step\":\"Navigate to the Location screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_24')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Get location\\\"\",\"code\":\"await expect(element(by.id('get_location_button'))).toBeVisible();\"},{\"step\":\"Tap the get location element\",\"code\":\"await element(by.id('get_location_button')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('location_error'))).toHaveText('User denied access to location services.');"
+      },
+      "validationMatcher": "await expect(element(by.id('location_error'))).toExist();",
+      "creationTime": 1748233536873
+    }
+  ]
+}

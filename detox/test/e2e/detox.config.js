@@ -52,7 +52,7 @@ const config = {
     'ios.debug': {
       type: 'ios.app',
       name: 'example',
-      binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/example-ci.app',
+      binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/example.app',
       build: 'set -o pipefail && xcodebuild -workspace ios/example.xcworkspace -scheme example-ci -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -quiet',
       start: 'react-native start',
       bundleId: 'com.wix.detox-example',
@@ -61,7 +61,7 @@ const config = {
     'ios.release': {
       type: 'ios.app',
       name: 'example',
-      binaryPath: 'ios/build/Build/Products/Release-iphonesimulator/example-ci.app',
+      binaryPath: 'ios/build/Build/Products/Release-iphonesimulator/example.app',
       build: 'set -o pipefail && export CODE_SIGNING_REQUIRED=NO && export RCT_NO_LAUNCH_PACKAGER=true && xcodebuild -workspace ios/example.xcworkspace -scheme example-ci -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -quiet',
     },
 
@@ -123,7 +123,7 @@ const config = {
     'android.genycloud.uuid': {
       type: 'android.genycloud',
       device: {
-        recipeUUID: '9baf12f9-a645-4ffa-a688-0e92584d6194',
+        recipeUUID: '544e47fc-ab69-4920-8d82-34509391a7af',
       },
       utilBinaryPaths: ["e2e/util-binary/detoxbutler-1.0.4-genymotion-release.apk"]
     },
@@ -131,7 +131,7 @@ const config = {
     'android.genycloud.name': {
       type: 'android.genycloud',
       device: {
-        recipeName: 'Detox_Pixel_3a_API_34',
+        recipeName: 'Detox_Pixel_3a_API_35',
       },
       utilBinaryPaths: ["e2e/util-binary/detoxbutler-1.0.4-genymotion-release.apk"]
     },
@@ -184,11 +184,11 @@ const config = {
       apps: ['android.release', 'android.release.withArgs'],
     },
     'android.genycloud.debug': {
-      device: 'android.genycloud.uuid',
+      device: 'android.genycloud.name',
       apps: ['android.debug'],
     },
     'android.genycloud.release': {
-      device: 'android.genycloud.uuid',
+      device: 'android.genycloud.name',
       apps: ['android.release', 'android.release.withArgs'],
     },
     'android.genycloud.release2': {

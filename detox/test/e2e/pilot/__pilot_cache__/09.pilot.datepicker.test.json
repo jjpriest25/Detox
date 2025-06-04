@@ -1,0 +1,128 @@
+{
+  "{\"currentStep\":\"Restart the React Native state\",\"previousSteps\":[]}": [
+    {
+      "value": {
+        "code": "await device.reloadReactNative();"
+      },
+      "validationMatcher": "// No UI elements to validate - this is a device-level operation",
+      "creationTime": 1748233220381
+    }
+  ],
+  "{\"currentStep\":\"Navigate to the DatePicker screen\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('detox_temp_0_0_0_1_0_25')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_25'))).toExist();",
+      "creationTime": 1748233237355
+    }
+  ],
+  "{\"currentStep\":\"Verify there is element with the text \\\"Date (UTC): \\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('utcDateLabel'))).toHaveText('Date (UTC): Jul 1st, 2023');"
+      },
+      "validationMatcher": "await expect(element(by.id('utcDateLabel'))).toExist();",
+      "creationTime": 1748233254589
+    }
+  ],
+  "{\"currentStep\":\"Verify the element value of current date UTC July 1st 2023\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"},{\"step\":\"Verify there is element with the text \\\"Date (UTC): \\\"\",\"code\":\"await expect(element(by.id('utcDateLabel'))).toHaveText('Date (UTC): Jul 1st, 2023');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('utcDateLabel'))).toHaveText('Date (UTC): Jul 1st, 2023');"
+      },
+      "validationMatcher": "await expect(element(by.id('utcDateLabel'))).toExist();",
+      "creationTime": 1748233262072
+    }
+  ],
+  "{\"currentStep\":\"Verify there is element with the text \\\"Time (UTC): \\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"},{\"step\":\"Verify there is element with the text \\\"Date (UTC): \\\"\",\"code\":\"await expect(element(by.id('utcDateLabel'))).toHaveText('Date (UTC): Jul 1st, 2023');\"},{\"step\":\"Verify the element value of current date UTC July 1st 2023\",\"code\":\"await expect(element(by.id('utcDateLabel'))).toHaveText('Date (UTC): Jul 1st, 2023');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('utcTimeLabel'))).toHaveText('Time (UTC): 4:30 PM');"
+      },
+      "validationMatcher": "await expect(element(by.id('utcTimeLabel'))).toExist();",
+      "creationTime": 1748233270449
+    }
+  ],
+  "{\"currentStep\":\"Verify there is element with the text \\\"Time Local: \\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"},{\"step\":\"Verify there is element with the text \\\"Date (UTC): \\\"\",\"code\":\"await expect(element(by.id('utcDateLabel'))).toHaveText('Date (UTC): Jul 1st, 2023');\"},{\"step\":\"Verify the element value of current date UTC July 1st 2023\",\"code\":\"await expect(element(by.id('utcDateLabel'))).toHaveText('Date (UTC): Jul 1st, 2023');\"},{\"step\":\"Verify there is element with the text \\\"Time (UTC): \\\"\",\"code\":\"await expect(element(by.id('utcTimeLabel'))).toHaveText('Time (UTC): 4:30 PM');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('localTimeLabel'))).toHaveText('Time (Local): 7:30 PM');"
+      },
+      "validationMatcher": "await expect(element(by.id('localTimeLabel'))).toExist();",
+      "creationTime": 1748233278987
+    }
+  ],
+  "{\"currentStep\":\"Verify \\\"Time Local: \\\" value is 7:30 pm\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"},{\"step\":\"Verify there is element with the text \\\"Date (UTC): \\\"\",\"code\":\"await expect(element(by.id('utcDateLabel'))).toHaveText('Date (UTC): Jul 1st, 2023');\"},{\"step\":\"Verify the element value of current date UTC July 1st 2023\",\"code\":\"await expect(element(by.id('utcDateLabel'))).toHaveText('Date (UTC): Jul 1st, 2023');\"},{\"step\":\"Verify there is element with the text \\\"Time (UTC): \\\"\",\"code\":\"await expect(element(by.id('utcTimeLabel'))).toHaveText('Time (UTC): 4:30 PM');\"},{\"step\":\"Verify there is element with the text \\\"Time Local: \\\"\",\"code\":\"await expect(element(by.id('localTimeLabel'))).toHaveText('Time (Local): 7:30 PM');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('localTimeLabel'))).toHaveText('Time (Local): 7:30 PM');"
+      },
+      "validationMatcher": "await expect(element(by.id('localTimeLabel'))).toExist();",
+      "creationTime": 1748233285932
+    }
+  ],
+  "{\"currentStep\":\"Verify there is an element with the text \\\"Compact Date Picker\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('toggleDatePicker'))).toHaveText('Compact Date Picker');"
+      },
+      "validationMatcher": "await expect(element(by.id('toggleDatePicker'))).toExist();",
+      "creationTime": 1748233334925
+    }
+  ],
+  "{\"currentStep\":\"Verify there is an element with the text \\\"Compact Date Picker\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Compact Date Picker\\\"\",\"code\":\"await expect(element(by.id('toggleDatePicker'))).toHaveText('Compact Date Picker');\",\"error\":\"Test Failed: Failed expectation: TOHAVETEXT(text == “Compact Date Picker”) WITH MATCHER(id == “toggleDatePicker”)\\n\\nHINT: To print view hierarchy on failed actions/matches, use log-level verbose or higher.\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('toggleDatePicker'))).toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.id('toggleDatePicker'))).toExist();",
+      "creationTime": 1748233344115
+    }
+  ],
+  "{\"currentStep\":\"Tap the element with the text \\\"Compact Date Picker\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Compact Date Picker\\\"\",\"code\":\"await expect(element(by.id('toggleDatePicker'))).toBeVisible();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('toggleDatePicker')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('toggleDatePicker'))).toBeVisible();",
+      "creationTime": 1748233350321
+    }
+  ],
+  "{\"currentStep\":\"Verify there is an element with the text \\\"Inline Date Picker\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Compact Date Picker\\\"\",\"code\":\"await expect(element(by.id('toggleDatePicker'))).toBeVisible();\"},{\"step\":\"Tap the element with the text \\\"Compact Date Picker\\\"\",\"code\":\"await element(by.id('toggleDatePicker')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('toggleDatePicker'))).toBeVisible();\nawait expect(element(by.id('toggleDatePicker'))).toHaveText('Inline Date Picker');"
+      },
+      "validationMatcher": "await expect(element(by.id('toggleDatePicker'))).toExist();",
+      "creationTime": 1748233360164
+    }
+  ],
+  "{\"currentStep\":\"Verify there is an element with the text \\\"Inline Date Picker\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Compact Date Picker\\\"\",\"code\":\"await expect(element(by.id('toggleDatePicker'))).toBeVisible();\"},{\"step\":\"Tap the element with the text \\\"Compact Date Picker\\\"\",\"code\":\"await element(by.id('toggleDatePicker')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Inline Date Picker\\\"\",\"code\":\"await expect(element(by.id('toggleDatePicker'))).toBeVisible();\\nawait expect(element(by.id('toggleDatePicker'))).toHaveText('Inline Date Picker');\",\"error\":\"Test Failed: Failed expectation: TOHAVETEXT(text == “Inline Date Picker”) WITH MATCHER(id == “toggleDatePicker”)\\n\\nHINT: To print view hierarchy on failed actions/matches, use log-level verbose or higher.\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('toggleDatePicker'))).toBeVisible();\nawait expect(element(by.id('toggleDatePicker'))).toHaveLabel('Inline Date Picker');"
+      },
+      "validationMatcher": "await expect(element(by.id('toggleDatePicker'))).toExist();",
+      "creationTime": 1748233368480
+    }
+  ],
+  "{\"currentStep\":\"Verify there is an element with today`s date at the bottom of the screen\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Compact Date Picker\\\"\",\"code\":\"await expect(element(by.id('toggleDatePicker'))).toBeVisible();\"},{\"step\":\"Tap the element with the text \\\"Compact Date Picker\\\"\",\"code\":\"await element(by.id('toggleDatePicker')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Inline Date Picker\\\"\",\"code\":\"await expect(element(by.id('toggleDatePicker'))).toBeVisible();\\nawait expect(element(by.id('toggleDatePicker'))).toHaveLabel('Inline Date Picker');\"}]}": [
+    {
+      "value": {
+        "code": "// Verify there is an element with today's date (1) at the bottom of the screen\nawait expect(element(by.id('detox_temp_0_0_0_1_0_5_0_0_0_0_2_6'))).toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_5_0_0_0_0_2_6'))).toExist();",
+      "creationTime": 1748233380506
+    }
+  ],
+  "{\"currentStep\":\"Set the date picker to September 9th, 2023\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the DatePicker screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_25')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Compact Date Picker\\\"\",\"code\":\"await expect(element(by.id('toggleDatePicker'))).toBeVisible();\"},{\"step\":\"Tap the element with the text \\\"Compact Date Picker\\\"\",\"code\":\"await element(by.id('toggleDatePicker')).tap();\"},{\"step\":\"Verify there is an element with the text \\\"Inline Date Picker\\\"\",\"code\":\"await expect(element(by.id('toggleDatePicker'))).toBeVisible();\\nawait expect(element(by.id('toggleDatePicker'))).toHaveLabel('Inline Date Picker');\"},{\"step\":\"Verify there is an element with today`s date at the bottom of the screen\",\"code\":\"// Verify there is an element with today's date (1) at the bottom of the screen\\nawait expect(element(by.id('detox_temp_0_0_0_1_0_5_0_0_0_0_2_6'))).toBeVisible();\"}]}": [
+    {
+      "value": {
+        "code": "// Navigate from July 2023 to September 2023 (2 months forward)\nawait element(by.id('detox_temp_0_0_0_1_0_5_0_0_0_0_0_1')).tap(); // Next Month button - August\nawait element(by.id('detox_temp_0_0_0_1_0_5_0_0_0_0_0_1')).tap(); // Next Month button - September\n\n// Set the date to September 9th, 2023\nawait element(by.id('datePicker')).setDatePickerDate('2023-09-09', 'yyyy-MM-dd');"
+      },
+      "validationMatcher": "await expect(element(by.id('datePicker'))).toBeVisible();\nawait expect(element(by.id('detox_temp_0_0_0_1_0_5_0_0_0_0_0_1'))).toBeVisible(); // Next Month button",
+      "creationTime": 1748233391983
+    }
+  ]
+}

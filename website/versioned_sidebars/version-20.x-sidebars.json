@@ -16,9 +16,9 @@
       "type": "category",
       "label": "Guides",
       "items": [
-        "guide/investigating-test-failure",
         "guide/test-id",
         "guide/parallel-test-execution",
+        "guide/detox-repl",
         "guide/typescript",
         "guide/testing-webviews",
         "guide/genymotion-saas",
@@ -37,11 +37,10 @@
     },
     {
       "type": "category",
-      "label": "Detox Copilot",
+      "label": "Pilot-Powered Detox Testing",
       "items": [
-        "copilot/testing-with-copilot",
-        "copilot/best-practices",
-        "copilot/technical-overview"
+        "pilot/testing-with-pilot",
+        "pilot/best-practices"
       ]
     },
     {
@@ -51,7 +50,8 @@
         "troubleshooting/building-the-app",
         "troubleshooting/running-tests",
         "troubleshooting/synchronization",
-        "troubleshooting/flakiness"
+        "troubleshooting/flakiness",
+        "troubleshooting/element-matching"
       ]
     },
     {
@@ -102,7 +102,7 @@
         "api/webviews",
         "api/system",
         "api/logger",
-        "api/copilot"
+        "api/pilot"
       ]
     },
     "api/internals",

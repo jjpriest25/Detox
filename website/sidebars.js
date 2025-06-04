@@ -30,9 +30,9 @@ const sidebars = {
       type: 'category',
       label: 'Guides',
       items: [
-        'guide/investigating-test-failure',
         'guide/test-id',
         'guide/parallel-test-execution',
+        'guide/detox-repl',
         'guide/typescript',
         'guide/testing-webviews',
         'guide/genymotion-saas',
@@ -51,10 +51,10 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Detox Copilot',
+      label: 'Pilot-Powered Detox Testing',
       items: [
-        'copilot/testing-with-copilot',
-        'copilot/best-practices',
+        'pilot/testing-with-pilot',
+        'pilot/best-practices',
       ]
     },
     {
@@ -65,6 +65,7 @@ const sidebars = {
         'troubleshooting/running-tests',
         'troubleshooting/synchronization',
         'troubleshooting/flakiness',
+        'troubleshooting/element-matching',
       ]
     },
     {
@@ -115,7 +116,7 @@ const sidebars = {
         'api/webviews',
         'api/system',
         'api/logger',
-        'api/copilot',
+        'api/pilot',
       ]
     },
     'api/internals',

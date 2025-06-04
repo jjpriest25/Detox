@@ -1,0 +1,56 @@
+{
+  "{\"currentStep\":\"Restart the React Native environment\",\"previousSteps\":[]}": [
+    {
+      "value": {
+        "code": "await device.reloadReactNative();"
+      },
+      "validationMatcher": "// No specific elements need validation for restarting React Native environment",
+      "creationTime": 1748233115453
+    }
+  ],
+  "{\"currentStep\":\"Navigate to the WaitFor screen\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('detox_temp_0_0_0_1_0_10')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_10'))).toExist();",
+      "creationTime": 1748233125004
+    }
+  ],
+  "{\"currentStep\":\"Verify that an element with text \\\"Text5\\\" is not visible\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WaitFor screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_10')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.text('Text5'))).not.toBeVisible();"
+      },
+      "validationMatcher": "// Verify the Text5 element exists in the view hierarchy\nawait expect(element(by.text('Text5'))).toExist();",
+      "creationTime": 1748233134645
+    }
+  ],
+  "{\"currentStep\":\"Tap the \\\"Go\\\" button\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WaitFor screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_10')).tap();\"},{\"step\":\"Verify that an element with text \\\"Text5\\\" is not visible\",\"code\":\"await expect(element(by.text('Text5'))).not.toBeVisible();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('goButton')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('goButton'))).toExist();",
+      "creationTime": 1748233142317
+    }
+  ],
+  "{\"currentStep\":\"Scroll down in the ScrollView until \\\"Text5\\\" becomes visible\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WaitFor screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_10')).tap();\"},{\"step\":\"Verify that an element with text \\\"Text5\\\" is not visible\",\"code\":\"await expect(element(by.text('Text5'))).not.toBeVisible();\"},{\"step\":\"Tap the \\\"Go\\\" button\",\"code\":\"await element(by.id('goButton')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await waitFor(element(by.text('Text5')))\n  .toBeVisible()\n  .whileElement(by.id('ScrollView'))\n  .scroll(50, 'down');"
+      },
+      "validationMatcher": "await expect(element(by.id('ScrollView'))).toExist();\nawait expect(element(by.text('Text5'))).toExist();",
+      "creationTime": 1748233151327
+    }
+  ],
+  "{\"currentStep\":\"Confirm that \\\"Text5\\\" is now visible on the screen\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the WaitFor screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_10')).tap();\"},{\"step\":\"Verify that an element with text \\\"Text5\\\" is not visible\",\"code\":\"await expect(element(by.text('Text5'))).not.toBeVisible();\"},{\"step\":\"Tap the \\\"Go\\\" button\",\"code\":\"await element(by.id('goButton')).tap();\"},{\"step\":\"Scroll down in the ScrollView until \\\"Text5\\\" becomes visible\",\"code\":\"await waitFor(element(by.text('Text5')))\\n  .toBeVisible()\\n  .whileElement(by.id('ScrollView'))\\n  .scroll(50, 'down');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.text('Text5'))).toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.text('Text5'))).toExist();",
+      "creationTime": 1748233165911
+    }
+  ]
+}

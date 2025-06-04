@@ -1,0 +1,74 @@
+{
+  "{\"currentStep\":\"Restart the React Native state\",\"previousSteps\":[]}": [
+    {
+      "value": {
+        "code": "await device.reloadReactNative();"
+      },
+      "validationMatcher": "// No specific element validation needed for device.reloadReactNative() as it's a device-level operation",
+      "creationTime": 1748233796423
+    }
+  ],
+  "{\"currentStep\":\"Navigate to the Visibility Expectation screen\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('detox_temp_0_0_0_1_0_5')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_5'))).toExist();",
+      "creationTime": 1748233803578
+    }
+  ],
+  "{\"currentStep\":\"Verify there is a text element with the text \\\"Element should be half-visible\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the Visibility Expectation screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_5')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('detox_temp_0_0_0_1_0_0_1'))).toHaveText('Element should be only half-visible.');"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0_1'))).toExist();",
+      "creationTime": 1748233811504
+    }
+  ],
+  "{\"currentStep\":\"Verify the purple rectangle below the text that is exactly 50% visible\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the Visibility Expectation screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_5')).tap();\"},{\"step\":\"Verify there is a text element with the text \\\"Element should be half-visible\\\"\",\"code\":\"await expect(element(by.id('detox_temp_0_0_0_1_0_0_1'))).toHaveText('Element should be only half-visible.');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('halfVisible'))).toBeVisible(50);"
+      },
+      "validationMatcher": "await expect(element(by.id('halfVisible'))).toExist();",
+      "creationTime": 1748233819705
+    }
+  ],
+  "{\"currentStep\":\"Tap the button with the text \\\"Move That Element\\\"\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the Visibility Expectation screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_5')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('moveHalfVisible')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('moveHalfVisible'))).toExist();",
+      "creationTime": 1748233850526
+    }
+  ],
+  "{\"currentStep\":\"Verify the purple rectangle is exactly 25% visible\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the Visibility Expectation screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_5')).tap();\"},{\"step\":\"Tap the button with the text \\\"Move That Element\\\"\",\"code\":\"await element(by.id('moveHalfVisible')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('halfVisible'))).toBeVisible(25);"
+      },
+      "validationMatcher": "await expect(element(by.id('halfVisible'))).toExist();",
+      "creationTime": 1748233859363
+    }
+  ],
+  "{\"currentStep\":\"Verify the purple rectangle is exactly 26% visible\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the Visibility Expectation screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_5')).tap();\"},{\"step\":\"Tap the button with the text \\\"Move That Element\\\"\",\"code\":\"await element(by.id('moveHalfVisible')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('halfVisible'))).toBeVisible(26);"
+      },
+      "validationMatcher": "await expect(element(by.id('halfVisible'))).toExist();",
+      "creationTime": 1748233871216
+    }
+  ],
+  "{\"currentStep\":\"Verify the purple rectangle is exactly 26% visible\",\"previousSteps\":[{\"step\":\"Restart the React Native state\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Navigate to the Visibility Expectation screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_5')).tap();\"},{\"step\":\"Tap the button with the text \\\"Move That Element\\\"\",\"code\":\"await element(by.id('moveHalfVisible')).tap();\"},{\"step\":\"Verify the purple rectangle is exactly 26% visible\",\"code\":\"await expect(element(by.id('halfVisible'))).toBeVisible(26);\",\"error\":\"Test Failed: Failed expectation: TOBEVISIBLE WITH MATCHER(id == “halfVisible”), View “<RCTViewComponentView: 0x10384ade0>” is not visible: View is obscured by its window bounds and does not pass visibility percent threshold (26)\\n\\nHINT: To print view hierarchy on failed actions/matches, use log-level verbose or higher.\"}]}": [
+    {
+      "value": {
+        "code": "throw new Error(\"The purple rectangle is not 26% visible. Based on its position (x=322, width=428 on a screen width of 430), the element extends far beyond the screen bounds and is significantly less than 26% visible.\");"
+      },
+      "validationMatcher": "await expect(element(by.id('halfVisible'))).toExist();",
+      "creationTime": 1748233881883
+    }
+  ]
+}

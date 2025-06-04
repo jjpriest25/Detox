@@ -1,0 +1,395 @@
+{
+  "{\"currentStep\":\"Restart the React Native environment\",\"previousSteps\":[]}": [
+    {
+      "value": {
+        "code": "await device.reloadReactNative();"
+      },
+      "validationMatcher": "// No specific elements need validation for reloading React Native",
+      "creationTime": 1748231878777
+    }
+  ],
+  "{\"currentStep\":\"Go to the Actions screen\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('detox_temp_0_0_0_1_0_4')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_4'))).toExist();",
+      "creationTime": 1748231888408
+    }
+  ],
+  "{\"currentStep\":\"Press the \\\"Tap Me\\\" button\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('View7991')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('View7991'))).toExist();",
+      "creationTime": 1748231897588
+    }
+  ],
+  "{\"currentStep\":\"The text \\\"Tap Working!!!\\\" is shown on the screen\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Press the \\\"Tap Me\\\" button\",\"code\":\"await element(by.id('View7991')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toExist();",
+      "creationTime": 1748231905505
+    }
+  ],
+  "{\"currentStep\":\"Perform a long press on the \\\"Tap Me\\\" button\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('View7991')).longPress();"
+      },
+      "validationMatcher": "await expect(element(by.id('View7991'))).toExist();",
+      "creationTime": 1748231914709
+    }
+  ],
+  "{\"currentStep\":\"The message \\\"Long Press Working!!!\\\" is displayed\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Perform a long press on the \\\"Tap Me\\\" button\",\"code\":\"await element(by.id('View7991')).longPress();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toExist();",
+      "creationTime": 1748231924547
+    }
+  ],
+  "{\"currentStep\":\"Long press the top-most left-most corner of the \\\"Long Press on Top Left\\\" button\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('detox_temp_0_0_0_1_0_0_2')).longPress({x: 0, y: 0});"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0_2'))).toExist();",
+      "creationTime": 1748231962774
+    }
+  ],
+  "{\"currentStep\":\"The text \\\"Long Press on Top Left Working!!!\\\" appears\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Long press the top-most left-most corner of the \\\"Long Press on Top Left\\\" button\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_0_2')).longPress({x: 0, y: 0});\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toBeVisible();\nawait expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toHaveText('Long Press on Top Left Working!!!');"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toExist();",
+      "creationTime": 1748231973592
+    }
+  ],
+  "{\"currentStep\":\"Attempt a long press on the \\\"Long Press on Top Left\\\" button outside its bounds\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "// The \"Long Press on Top Left\" button is at x=0, y=153, width=430, height=27\n// To press outside its bounds, I'll use coordinates outside this rectangle\n// Using point (-10, 153) which is to the left of the button's bounds\nawait element(by.id('detox_temp_0_0_0_1_0_0_2')).longPress({x: -10, y: 0});"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0_2'))).toExist();",
+      "creationTime": 1748231986548
+    }
+  ],
+  "{\"currentStep\":\"Attempt a long press on the \\\"Long Press on Top Left\\\" button outside its bounds\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Attempt a long press on the \\\"Long Press on Top Left\\\" button outside its bounds\",\"code\":\"// The \\\"Long Press on Top Left\\\" button is at x=0, y=153, width=430, height=27\\n// To press outside its bounds, I'll use coordinates outside this rectangle\\n// Using point (-10, 153) which is to the left of the button's bounds\\nawait element(by.id('detox_temp_0_0_0_1_0_0_2')).longPress({x: -10, y: 0});\",\"error\":\"Test Failed: View is not hittable at its visible point. Error: View is not visible around point.\\n- view point: {-10, 0}\\n- visible bounds: {{0, 0}, {430, 27}}\\n- view bounds: {{0, 153}, {430, 27}}\\n---\\nError: Error Domain=DetoxErrorDomain Code=0 \\\"View “<RCTViewComponentView: 0x105956b60>” is not visible: View does not pass visibility percent threshold (100)\\\" UserInfo={NSLocalizedDescription=View “<RCTViewComponentView: 0x105956b60>” is not visible: View does not pass visibility percent threshold (100)}\"}]}": [
+    {
+      "value": {
+        "code": "// The \"Long Press on Top Left\" button is at x=0, y=153, width=430, height=27\n// To press outside its bounds but still be hittable, I'll use coordinates above the button\n// Using point (0, -10) which is above the button's bounds but within the element's coordinate system\nawait element(by.id('detox_temp_0_0_0_1_0_0_2')).longPress({x: 0, y: -10});"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0_2'))).toExist();",
+      "creationTime": 1748232000137
+    }
+  ],
+  "{\"currentStep\":\"Enter \\\"Type Working!!!\\\" into the text input field\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('UniqueId937')).typeText('Type Working!!!');"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId937'))).toExist();",
+      "creationTime": 1748232013705
+    }
+  ],
+  "{\"currentStep\":\"The typed text is visible on the screen\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Enter \\\"Type Working!!!\\\" into the text input field\",\"code\":\"await element(by.id('UniqueId937')).typeText('Type Working!!!');\"}]}": [
+    {
+      "value": {
+        "code": "// Verify that the typed text \"Type Working!!!\" is visible in the text input field\nawait expect(element(by.id('UniqueId937'))).toHaveValue('Type Working!!!');\nawait expect(element(by.id('UniqueId937'))).toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId937'))).toExist();",
+      "creationTime": 1748232024951
+    }
+  ],
+  "{\"currentStep\":\"Input \\\"test\\\" in the text field\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('UniqueId937')).typeText('test');"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId937'))).toExist();",
+      "creationTime": 1748232037621
+    }
+  ],
+  "{\"currentStep\":\"Hit the backspace key in the text input\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Input \\\"test\\\" in the text field\",\"code\":\"await element(by.id('UniqueId937')).typeText('test');\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('UniqueId937')).tapBackspaceKey();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId937'))).toExist();",
+      "creationTime": 1748232048656
+    }
+  ],
+  "{\"currentStep\":\"The typed text is shown in the input field\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Input \\\"test\\\" in the text field\",\"code\":\"await element(by.id('UniqueId937')).typeText('test');\"},{\"step\":\"Hit the backspace key in the text input\",\"code\":\"await element(by.id('UniqueId937')).tapBackspaceKey();\"}]}": [
+    {
+      "value": {
+        "code": "// Visual assertion: The input field correctly displays the typed text \"tes\"\n// This can be verified from the snapshot image which shows \"tes\" in the input field\nawait expect(element(by.id('UniqueId937'))).toHaveValue('tes');"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId937'))).toExist();",
+      "creationTime": 1748232059510
+    }
+  ],
+  "{\"currentStep\":\"Tap the return key on the keyboard for the text input\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "throw new Error(\"Cannot tap return key - no keyboard is currently visible. A text input must be focused first to display the keyboard.\");"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId937'))).toExist();",
+      "creationTime": 1748232074871
+    }
+  ],
+  "{\"currentStep\":\"Tap the return key on the keyboard for the text input\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Tap the return key on the keyboard for the text input\",\"code\":\"throw new Error(\\\"Cannot tap return key - no keyboard is currently visible. A text input must be focused first to display the keyboard.\\\");\",\"error\":\"Cannot tap return key - no keyboard is currently visible. A text input must be focused first to display the keyboard.\"}]}": [
+    {
+      "value": {
+        "code": "// First focus on a text input to bring up the keyboard\nawait element(by.id('UniqueId937')).tap();\n\n// Then tap the return key on the keyboard\nawait element(by.id('UniqueId937')).tapReturnKey();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId937'))).toExist();",
+      "creationTime": 1748232086440
+    }
+  ],
+  "{\"currentStep\":\"The message \\\"Return Working!!!\\\" is visible to the user\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Tap the return key on the keyboard for the text input\",\"code\":\"// First focus on a text input to bring up the keyboard\\nawait element(by.id('UniqueId937')).tap();\\n\\n// Then tap the return key on the keyboard\\nawait element(by.id('UniqueId937')).tapReturnKey();\"}]}": [
+    {
+      "value": {
+        "code": "// Visual assertion passed - the message \"Return Working!!!\" is clearly visible in the center of the screen as shown in the snapshot image\nawait expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toBeVisible();"
+      },
+      "validationMatcher": "// No cache validation needed as this is a visual assertion check",
+      "creationTime": 1748232097813
+    }
+  ],
+  "{\"currentStep\":\"Remove all text from the text input that already has text in it\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('UniqueId005')).clearText();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId005'))).toExist();",
+      "creationTime": 1748232106719
+    }
+  ],
+  "{\"currentStep\":\"The text \\\"Clear Working!!!\\\" appears on the screen\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Remove all text from the text input that already has text in it\",\"code\":\"await element(by.id('UniqueId005')).clearText();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toBeVisible();\nawait expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toHaveText('Clear Working!!!');"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toExist();",
+      "creationTime": 1748232120279
+    }
+  ],
+  "{\"currentStep\":\"Substitute the existing text with \\\"replaced_text\\\" in the test_id=\\\"UniqueId006\\\" field\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('UniqueId006')).replaceText('replaced_text');"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId006'))).toExist();",
+      "creationTime": 1748232130186
+    }
+  ],
+  "{\"currentStep\":\"The message \\\"Replace Working!!!\\\" is shown\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Substitute the existing text with \\\"replaced_text\\\" in the test_id=\\\"UniqueId006\\\" field\",\"code\":\"await element(by.id('UniqueId006')).replaceText('replaced_text');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.label('Replace Working!!!'))).toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.label('Replace Working!!!'))).toExist();",
+      "creationTime": 1748232139745
+    }
+  ],
+  "{\"currentStep\":\"Swipe fast the scrollable area ScrollView799 downwards to activate the pull-to-reload\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('ScrollView799')).swipe('down', 'fast');"
+      },
+      "validationMatcher": "await expect(element(by.id('ScrollView799'))).toExist();",
+      "creationTime": 1748232150034
+    }
+  ],
+  "{\"currentStep\":\"The text \\\"PullToReload Working!!!\\\" becomes visible\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Swipe fast the scrollable area ScrollView799 downwards to activate the pull-to-reload\",\"code\":\"await element(by.id('ScrollView799')).swipe('down', 'fast');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0'))).toExist();",
+      "creationTime": 1748232161249
+    }
+  ],
+  "{\"currentStep\":\"The element with text \\\"Text1\\\" can be seen\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('detox_temp_0_0_0_1_0_0_12_0_0_0_0'))).toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0_12_0_0_0_0'))).toExist();",
+      "creationTime": 1748232172562
+    }
+  ],
+  "{\"currentStep\":\"Swipe the view \\\"ScrollView161\\\" upwards\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The element with text \\\"Text1\\\" can be seen\",\"code\":\"await expect(element(by.id('detox_temp_0_0_0_1_0_0_12_0_0_0_0'))).toBeVisible();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('ScrollView161')).swipe('up');"
+      },
+      "validationMatcher": "await expect(element(by.id('ScrollView161'))).toExist();",
+      "creationTime": 1748232179527
+    }
+  ],
+  "{\"currentStep\":\"The Text1 element is no longer in view\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The element with text \\\"Text1\\\" can be seen\",\"code\":\"await expect(element(by.id('detox_temp_0_0_0_1_0_0_12_0_0_0_0'))).toBeVisible();\"},{\"step\":\"Swipe the view \\\"ScrollView161\\\" upwards\",\"code\":\"await element(by.id('ScrollView161')).swipe('up');\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('detox_temp_0_0_0_1_0_0_12_0_0_0_0'))).not.toBeVisible();"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0_12_0_0_0_0'))).toExist();",
+      "creationTime": 1748232190221
+    }
+  ],
+  "{\"currentStep\":\"Swipe the element back up until the \\\"Text1\\\" element is visible\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The element with text \\\"Text1\\\" can be seen\",\"code\":\"await expect(element(by.id('detox_temp_0_0_0_1_0_0_12_0_0_0_0'))).toBeVisible();\"},{\"step\":\"Swipe the view \\\"ScrollView161\\\" upwards\",\"code\":\"await element(by.id('ScrollView161')).swipe('up');\"},{\"step\":\"The Text1 element is no longer in view\",\"code\":\"await expect(element(by.id('detox_temp_0_0_0_1_0_0_12_0_0_0_0'))).not.toBeVisible();\"}]}": [
+    {
+      "value": {
+        "code": "await waitFor(element(by.id('detox_temp_0_0_0_1_0_0_12_0_0_0_0')))\n  .toBeVisible()\n  .whileElement(by.id('ScrollView161'))\n  .scroll(50, 'up');"
+      },
+      "validationMatcher": "await expect(element(by.id('ScrollView161'))).toExist();\nawait expect(element(by.id('detox_temp_0_0_0_1_0_0_12_0_0_0_0'))).toExist();",
+      "creationTime": 1748232200222
+    }
+  ],
+  "{\"currentStep\":\"The slider is set to 25%\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "// Visual assertion passed - the slider is already set to 25% as shown in the snapshot image and confirmed by the value=\"25%\" in the view hierarchy"
+      },
+      "validationMatcher": "await expect(element(by.id('sliderWithASimpleID'))).toExist();",
+      "creationTime": 1748232269332
+    }
+  ],
+  "{\"currentStep\":\"Move the slider to the 75% position\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The slider is set to 25%\",\"code\":\"// Visual assertion passed - the slider is already set to 25% as shown in the snapshot image and confirmed by the value=\\\"25%\\\" in the view hierarchy\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('sliderWithASimpleID')).adjustSliderToPosition(0.75);"
+      },
+      "validationMatcher": "await expect(element(by.id('sliderWithASimpleID'))).toExist();",
+      "creationTime": 1748232276527
+    }
+  ],
+  "{\"currentStep\":\"The slider value is approximately 75%, give or take 10%\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The slider is set to 25%\",\"code\":\"// Visual assertion passed - the slider is already set to 25% as shown in the snapshot image and confirmed by the value=\\\"25%\\\" in the view hierarchy\"},{\"step\":\"Move the slider to the 75% position\",\"code\":\"await element(by.id('sliderWithASimpleID')).adjustSliderToPosition(0.75);\"}]}": [
+    {
+      "value": {
+        "code": "// Visual assertion passed - the slider value is exactly 75% as shown in the view hierarchy (value=\"75%\"), which falls within the acceptable range of 65%-85% (75% ± 10%)"
+      },
+      "validationMatcher": "await expect(element(by.id('sliderWithASimpleID'))).toExist();",
+      "creationTime": 1748232286545
+    }
+  ],
+  "{\"currentStep\":\"The text field UniqueId005 (call it \\\"the first\\\") does not have focus\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "// Visual assertion passed: The text field UniqueId005 is confirmed to not have focus based on the view hierarchy (focused=\"false\") and visual confirmation from the snapshot showing no focus indicators.\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId005'))).toExist();",
+      "creationTime": 1748232302813
+    }
+  ],
+  "{\"currentStep\":\"Text input UniqueId006 (call it \\\"the second\\\") is not currently focused\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The text field UniqueId005 (call it \\\"the first\\\") does not have focus\",\"code\":\"// Visual assertion passed: The text field UniqueId005 is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();\"}]}": [
+    {
+      "value": {
+        "code": "// Visual assertion passed: The text field UniqueId006 (the second) is confirmed to not have focus based on the view hierarchy (focused=\"false\") and visual confirmation from the snapshot showing no focus indicators.\nawait expect(element(by.id('UniqueId006'))).not.toBeFocused();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId006'))).toExist();",
+      "creationTime": 1748232312444
+    }
+  ],
+  "{\"currentStep\":\"Tap to focus on the first text field\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The text field UniqueId005 (call it \\\"the first\\\") does not have focus\",\"code\":\"// Visual assertion passed: The text field UniqueId005 is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();\"},{\"step\":\"Text input UniqueId006 (call it \\\"the second\\\") is not currently focused\",\"code\":\"// Visual assertion passed: The text field UniqueId006 (the second) is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId006'))).not.toBeFocused();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('UniqueId937')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId937'))).toExist();",
+      "creationTime": 1748232320288
+    }
+  ],
+  "{\"currentStep\":\"First text field now has the focus\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The text field UniqueId005 (call it \\\"the first\\\") does not have focus\",\"code\":\"// Visual assertion passed: The text field UniqueId005 is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();\"},{\"step\":\"Text input UniqueId006 (call it \\\"the second\\\") is not currently focused\",\"code\":\"// Visual assertion passed: The text field UniqueId006 (the second) is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId006'))).not.toBeFocused();\"},{\"step\":\"Tap to focus on the first text field\",\"code\":\"await element(by.id('UniqueId937')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "// Visual assertion passed: The first text field (UniqueId937) is confirmed to have focus based on the view hierarchy showing visible cursor elements (_UITextCursorView), active UIFieldEditor, and the keyboard being displayed, which are all indicators of an active focused text input.\nawait expect(element(by.id('UniqueId937'))).toBeFocused();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId937'))).toExist();",
+      "creationTime": 1748232330679
+    }
+  ],
+  "{\"currentStep\":\"The second text input remains unfocused\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The text field UniqueId005 (call it \\\"the first\\\") does not have focus\",\"code\":\"// Visual assertion passed: The text field UniqueId005 is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();\"},{\"step\":\"Text input UniqueId006 (call it \\\"the second\\\") is not currently focused\",\"code\":\"// Visual assertion passed: The text field UniqueId006 (the second) is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId006'))).not.toBeFocused();\"},{\"step\":\"Tap to focus on the first text field\",\"code\":\"await element(by.id('UniqueId937')).tap();\"},{\"step\":\"First text field now has the focus\",\"code\":\"// Visual assertion passed: The first text field (UniqueId937) is confirmed to have focus based on the view hierarchy showing visible cursor elements (_UITextCursorView), active UIFieldEditor, and the keyboard being displayed, which are all indicators of an active focused text input.\\nawait expect(element(by.id('UniqueId937'))).toBeFocused();\"}]}": [
+    {
+      "value": {
+        "code": "// Visual assertion passed: The second text input (UniqueId005) is confirmed to remain unfocused based on the view hierarchy (focused=\"false\") and visual confirmation from the snapshot showing no focus indicators such as cursor or active keyboard for this element.\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId005'))).toExist();",
+      "creationTime": 1748232341425
+    }
+  ],
+  "{\"currentStep\":\"Touch the second text field to give it focus\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The text field UniqueId005 (call it \\\"the first\\\") does not have focus\",\"code\":\"// Visual assertion passed: The text field UniqueId005 is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();\"},{\"step\":\"Text input UniqueId006 (call it \\\"the second\\\") is not currently focused\",\"code\":\"// Visual assertion passed: The text field UniqueId006 (the second) is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId006'))).not.toBeFocused();\"},{\"step\":\"Tap to focus on the first text field\",\"code\":\"await element(by.id('UniqueId937')).tap();\"},{\"step\":\"First text field now has the focus\",\"code\":\"// Visual assertion passed: The first text field (UniqueId937) is confirmed to have focus based on the view hierarchy showing visible cursor elements (_UITextCursorView), active UIFieldEditor, and the keyboard being displayed, which are all indicators of an active focused text input.\\nawait expect(element(by.id('UniqueId937'))).toBeFocused();\"},{\"step\":\"The second text input remains unfocused\",\"code\":\"// Visual assertion passed: The second text input (UniqueId005) is confirmed to remain unfocused based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators such as cursor or active keyboard for this element.\\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();\"}]}": [
+    {
+      "value": {
+        "code": "await element(by.id('UniqueId006')).tap();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId006'))).toExist();",
+      "creationTime": 1748232351971
+    }
+  ],
+  "{\"currentStep\":\"The first text input has lost focus\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The text field UniqueId005 (call it \\\"the first\\\") does not have focus\",\"code\":\"// Visual assertion passed: The text field UniqueId005 is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();\"},{\"step\":\"Text input UniqueId006 (call it \\\"the second\\\") is not currently focused\",\"code\":\"// Visual assertion passed: The text field UniqueId006 (the second) is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId006'))).not.toBeFocused();\"},{\"step\":\"Tap to focus on the first text field\",\"code\":\"await element(by.id('UniqueId937')).tap();\"},{\"step\":\"First text field now has the focus\",\"code\":\"// Visual assertion passed: The first text field (UniqueId937) is confirmed to have focus based on the view hierarchy showing visible cursor elements (_UITextCursorView), active UIFieldEditor, and the keyboard being displayed, which are all indicators of an active focused text input.\\nawait expect(element(by.id('UniqueId937'))).toBeFocused();\"},{\"step\":\"The second text input remains unfocused\",\"code\":\"// Visual assertion passed: The second text input (UniqueId005) is confirmed to remain unfocused based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators such as cursor or active keyboard for this element.\\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();\"},{\"step\":\"Touch the second text field to give it focus\",\"code\":\"await element(by.id('UniqueId006')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "await expect(element(by.id('UniqueId937'))).not.toBeFocused();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId937'))).toExist();",
+      "creationTime": 1748232363277
+    }
+  ],
+  "{\"currentStep\":\"2nd text field is now the active input\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"The text field UniqueId005 (call it \\\"the first\\\") does not have focus\",\"code\":\"// Visual assertion passed: The text field UniqueId005 is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();\"},{\"step\":\"Text input UniqueId006 (call it \\\"the second\\\") is not currently focused\",\"code\":\"// Visual assertion passed: The text field UniqueId006 (the second) is confirmed to not have focus based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators.\\nawait expect(element(by.id('UniqueId006'))).not.toBeFocused();\"},{\"step\":\"Tap to focus on the first text field\",\"code\":\"await element(by.id('UniqueId937')).tap();\"},{\"step\":\"First text field now has the focus\",\"code\":\"// Visual assertion passed: The first text field (UniqueId937) is confirmed to have focus based on the view hierarchy showing visible cursor elements (_UITextCursorView), active UIFieldEditor, and the keyboard being displayed, which are all indicators of an active focused text input.\\nawait expect(element(by.id('UniqueId937'))).toBeFocused();\"},{\"step\":\"The second text input remains unfocused\",\"code\":\"// Visual assertion passed: The second text input (UniqueId005) is confirmed to remain unfocused based on the view hierarchy (focused=\\\"false\\\") and visual confirmation from the snapshot showing no focus indicators such as cursor or active keyboard for this element.\\nawait expect(element(by.id('UniqueId005'))).not.toBeFocused();\"},{\"step\":\"Touch the second text field to give it focus\",\"code\":\"await element(by.id('UniqueId006')).tap();\"},{\"step\":\"The first text input has lost focus\",\"code\":\"await expect(element(by.id('UniqueId937'))).not.toBeFocused();\"}]}": [
+    {
+      "value": {
+        "code": "// Visual assertion passed: The second text field (UniqueId006) is confirmed to be the active input based on the view hierarchy showing a visible cursor (_UITextCursorView with visibility=\"visible\"), active UIFieldEditor, and the keyboard being displayed, which are all indicators of an active focused text input.\nawait expect(element(by.id('UniqueId006'))).toBeFocused();"
+      },
+      "validationMatcher": "await expect(element(by.id('UniqueId006'))).toExist();",
+      "creationTime": 1748232372479
+    }
+  ],
+  "{\"currentStep\":\"Tap the \\\"FOOBAR\\\" button\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "throw new Error(\"Unable to find the 'FOOBAR' button element in the view hierarchy - no element with 'FOOBAR' text or identifier exists.\");"
+      },
+      "creationTime": 1748232381161
+    }
+  ],
+  "{\"currentStep\":\"Tap the \\\"FOOBAR\\\" button\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Tap the \\\"FOOBAR\\\" button\",\"code\":\"throw new Error(\\\"Unable to find the 'FOOBAR' button element in the view hierarchy - no element with 'FOOBAR' text or identifier exists.\\\");\",\"error\":\"Unable to find the 'FOOBAR' button element in the view hierarchy - no element with 'FOOBAR' text or identifier exists.\"}]}": [
+    {
+      "value": {
+        "code": "throw new Error(\"Unable to find the 'FOOBAR' button element in the view hierarchy - no element with 'FOOBAR' text or identifier exists.\");"
+      },
+      "validationMatcher": "// No validation matcher needed as the element does not exist",
+      "creationTime": 1748232390638
+    }
+  ],
+  "{\"currentStep\":\"Do magic to the element\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"}]}": [
+    {
+      "value": {
+        "code": "throw new Error(\"The intent 'Do magic to the element' is too ambiguous - please specify which element and what action to perform.\");"
+      },
+      "creationTime": 1748232400589
+    }
+  ],
+  "{\"currentStep\":\"Do magic to the element\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Do magic to the element\",\"code\":\"throw new Error(\\\"The intent 'Do magic to the element' is too ambiguous - please specify which element and what action to perform.\\\");\",\"error\":\"The intent 'Do magic to the element' is too ambiguous - please specify which element and what action to perform.\"}]}": [
+    {
+      "value": {
+        "code": "throw new Error(\"The intent 'Do magic to the element' is too ambiguous - please specify which element and what specific action to perform (e.g., 'tap the login button', 'scroll the list view', 'adjust the slider').\");"
+      },
+      "creationTime": 1748232422107
+    }
+  ],
+  "{\"currentStep\":\"Attempt a long press on the \\\"Long Press on Top Left\\\" button outside its bounds\",\"previousSteps\":[{\"step\":\"Restart the React Native environment\",\"code\":\"await device.reloadReactNative();\"},{\"step\":\"Go to the Actions screen\",\"code\":\"await element(by.id('detox_temp_0_0_0_1_0_4')).tap();\"},{\"step\":\"Attempt a long press on the \\\"Long Press on Top Left\\\" button outside its bounds\",\"code\":\"// The \\\"Long Press on Top Left\\\" button is at x=0, y=153, width=430, height=27\\n// To press outside its bounds, I'll use coordinates outside this rectangle\\n// Using point (-10, 153) which is to the left of the button's bounds\\nawait element(by.id('detox_temp_0_0_0_1_0_0_2')).longPress({x: -10, y: 0});\",\"error\":\"Test Failed: View is not hittable at its visible point. Error: View is not visible around point.\\n- view point: {-10, 0}\\n- visible bounds: {{0, 0}, {430, 27}}\\n- view bounds: {{0, 153}, {430, 27}}\\n---\\nError: Error Domain=DetoxErrorDomain Code=0 \\\"View “<RCTViewComponentView: 0x106725750>” is not visible: View does not pass visibility percent threshold (100)\\\" UserInfo={NSLocalizedDescription=View “<RCTViewComponentView: 0x106725750>” is not visible: View does not pass visibility percent threshold (100)}\"}]}": [
+    {
+      "value": {
+        "code": "// The \"Long Press on Top Left\" button bounds are width=430, height=27\n// To press outside its bounds, I'll use coordinates beyond the button's dimensions\n// Using point (440, 30) which is outside the button's width and height bounds\nawait element(by.id('detox_temp_0_0_0_1_0_0_2')).longPress({x: 440, y: 30});"
+      },
+      "validationMatcher": "await expect(element(by.id('detox_temp_0_0_0_1_0_0_2'))).toExist();",
+      "creationTime": 1748234504573
+    }
+  ]
+}
